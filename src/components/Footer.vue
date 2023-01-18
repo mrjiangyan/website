@@ -21,7 +21,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>链接</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">首页</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">关于我们</a></li>
@@ -32,13 +32,13 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>我们的服务</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web开发</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">移动开发</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="#">人工智能</a></li>
             </ul>
           </div>
 
