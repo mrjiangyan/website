@@ -1,11 +1,11 @@
 /**
-* Template Name: Moderna - v4.11.0
-* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
-  "use strict";
+ * Template Name: Moderna - v4.11.0
+ * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+ * Author: BootstrapMade.com
+ * License: https://bootstrapmade.com/license/
+ */
+;(function () {
+  'use strict'
 
   /**
    * Easy selector helper function
@@ -23,10 +23,11 @@
    * Easy event listener function
    */
   const on = (type, el, listener, all = false) => {
+    console.log(type, el)
     let selectEl = select(el, all)
     if (selectEl) {
       if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
+        selectEl.forEach((e) => e.addEventListener(type, listener))
       } else {
         selectEl.addEventListener(type, listener)
       }
@@ -34,7 +35,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -54,7 +55,7 @@
     let elementPos = select(el).offsetTop
     window.scrollTo({
       top: elementPos - offset,
-      behavior: 'smooth'
+      behavior: 'smooth',
     })
   }
 
@@ -93,7 +94,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -102,45 +103,50 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
+  // on('click', '.navbar .dropdown > a', function(e) {
+  //   if (select('#navbar').classList.contains('navbar-mobile')) {
+  //     e.preventDefault()
+  //     this.nextElementSibling.classList.toggle('dropdown-active')
+  //   }
+  // }, true)
 
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
+  on(
+    'click',
+    '.scrollto',
+    function (e) {
+      if (select(this.hash)) {
+        e.preventDefault()
 
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        let navbar = select('#navbar')
+        if (navbar.classList.contains('navbar-mobile')) {
+          navbar.classList.remove('navbar-mobile')
+          let navbarToggle = select('.mobile-nav-toggle')
+          navbarToggle.classList.toggle('bi-list')
+          navbarToggle.classList.toggle('bi-x')
+        }
+        scrollto(this.hash)
       }
-      scrollto(this.hash)
-    }
-  }, true)
+    },
+    true
+  )
 
   /**
    * Skills animation
    */
-  let skilsContent = select('.skills-content');
+  let skilsContent = select('.skills-content')
   if (skilsContent) {
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
+      handler: function (direction) {
+        let progress = select('.progress .progress-bar', true)
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
-        });
-      }
+        })
+      },
     })
   }
 
@@ -152,52 +158,56 @@
     loop: true,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
-      clickable: true
-    }
-  });
+      clickable: true,
+    },
+  })
 
   /**
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
+    let portfolioContainer = select('.portfolio-container')
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-wrap',
-        layoutMode: 'fitRows'
-      });
+        layoutMode: 'fitRows',
+      })
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let portfolioFilters = select('#portfolio-flters li', true)
 
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
+      on(
+        'click',
+        '#portfolio-flters li',
+        function (e) {
+          e.preventDefault()
+          portfolioFilters.forEach(function (el) {
+            el.classList.remove('filter-active')
+          })
+          this.classList.add('filter-active')
 
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
+          portfolioIsotope.arrange({
+            filter: this.getAttribute('data-filter'),
+          })
+          portfolioIsotope.on('arrangeComplete', function () {
+            AOS.refresh()
+          })
+        },
+        true
+      )
     }
-
-  });
+  })
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
+    selector: '.portfolio-lightbox',
+  })
 
   /**
    * Portfolio details slider
@@ -206,14 +216,14 @@
     speed: 400,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
-      clickable: true
-    }
-  });
+      clickable: true,
+    },
+  })
 
   /**
    * Animation on scroll
@@ -221,15 +231,14 @@
   window.addEventListener('load', () => {
     AOS.init({
       duration: 1000,
-      easing: "ease-in-out",
+      easing: 'ease-in-out',
       once: true,
-      mirror: false
-    });
-  });
+      mirror: false,
+    })
+  })
 
   /**
-   * Initiate Pure Counter 
+   * Initiate Pure Counter
    */
-  new PureCounter();
-
+  new PureCounter()
 })()
