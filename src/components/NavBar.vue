@@ -1,9 +1,16 @@
 <template>
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+  <header
+    id="header"
+    :class="
+      showTransparent()
+        ? 'fixed-top d-flex align-items-center header-transparent'
+        : 'fixed-top d-flex align-items-center'
+    "
+  >
     <div class="container d-flex justify-content-between align-items-center">
       <div class="logo">
         <h1 class="text-light">
-          <a href="index.html"><span>Moderna</span></a>
+          <router-link to="/"><span>Touch Biz</span></router-link>
         </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -12,7 +19,8 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li>
-            <router-link class="active" to="/">首页</router-link>
+            <!--  -->
+            <router-link to="/">首页</router-link>
           </li>
           <li>
             <router-link to="/about">关于</router-link>
@@ -58,6 +66,83 @@ export default {
   name: 'NavBar',
   props: {
     msg: String,
+  },
+  mounted() {
+    this.load()
+  },
+  methods: {
+    load() {
+      let selectHeader = this.select('#header')
+      if (selectHeader) {
+        const headerScrolled = () => {
+          if (window.scrollY > 100) {
+            selectHeader.classList.add('header-scrolled')
+          } else {
+            selectHeader.classList.remove('header-scrolled')
+          }
+        }
+        window.addEventListener('load', headerScrolled)
+        this.onscroll(document, headerScrolled)
+      }
+
+      this.on(
+        'click',
+        '.scrollto',
+        function (e) {
+          console.log(e)
+          if (this.select(this.hash)) {
+            e.preventDefault()
+            let navbar = this.select('#navbar')
+            if (navbar.classList.contains('navbar-mobile')) {
+              navbar.classList.remove('navbar-mobile')
+              let navbarToggle = this.select('.mobile-nav-toggle')
+              navbarToggle.classList.toggle('bi-list')
+              navbarToggle.classList.toggle('bi-x')
+            }
+            this.scrollto(this.hash)
+          }
+        },
+        true
+      )
+      /**
+       * Mobile nav toggle
+       */
+      this.on('click', '.mobile-nav-toggle', function () {
+        this.select('#navbar').classList.toggle('navbar-mobile')
+        this.classList.toggle('bi-list')
+        this.classList.toggle('bi-x')
+      })
+    },
+    select(el, all = false) {
+      el = el.trim()
+      console.log(all, el)
+      console.log(document.querySelector(el))
+
+      if (all) {
+        return [...document.querySelectorAll(el)]
+      } else {
+        return document.querySelector(el)
+      }
+    },
+    onscroll(el, listener) {
+      el.addEventListener('scroll', listener)
+    },
+    on(type, el, listener, all = false) {
+      console.log(type, el)
+      let selectEl = this.select(el, all)
+      if (selectEl) {
+        if (all) {
+          selectEl.forEach((e) => e.addEventListener(type, listener))
+        } else {
+          selectEl.addEventListener(type, listener)
+        }
+      }
+    },
+    showTransparent() {
+      console.log(this.$route)
+      console.log(this.$route.path.indexOf('about') !== -1)
+      return this.$route.path.indexOf('about') === -1
+    },
   },
 }
 </script>
