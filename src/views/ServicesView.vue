@@ -56,7 +56,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 video-box">
-            <img src="assets/img/why-us.jpg" class="img-fluid" alt="" />
+            <img src="/img/why-us.jpg" class="img-fluid" alt="" />
             <a
               href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
               class="venobox play-btn mb-4"
@@ -96,7 +96,7 @@
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/service-details-1.jpg" alt="..." />
+                <img src="/img/service-details-1.jpg" alt="..." />
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="#">Our Mission</a></h5>
@@ -114,7 +114,7 @@
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/service-details-2.jpg" alt="..." />
+                <img src="/img/service-details-2.jpg" alt="..." />
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="#">Our Plan</a></h5>
@@ -132,7 +132,7 @@
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/service-details-3.jpg" alt="..." />
+                <img src="/img/service-details-3.jpg" alt="..." />
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="#">Our Vision</a></h5>
@@ -149,7 +149,7 @@
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/service-details-4.jpg" alt="..." />
+                <img src="/img/service-details-4.jpg" alt="..." />
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="#">Our Care</a></h5>
