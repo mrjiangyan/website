@@ -51,7 +51,9 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a href="contact.html">联系我们</a></li>
+          <li>
+            <router-link to="/contact">联系我们</router-link>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
