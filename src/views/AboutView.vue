@@ -15,7 +15,7 @@
     <!-- End About Us Section -->
 
     <!-- ======= About Section ======= -->
-    <section class="about" data-aos="fade-up">
+    <section v-if="false" class="about" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -48,7 +48,7 @@
     <!-- End About Section -->
 
     <!-- ======= Facts Section ======= -->
-    <section class="facts section-bg" data-aos="fade-up">
+    <section v-if="false" class="facts section-bg" data-aos="fade-up">
       <div class="container">
         <div class="row counters">
           <div class="col-lg-3 col-6 text-center">
@@ -96,7 +96,7 @@
     <!-- End Facts Section -->
 
     <!-- ======= Tetstimonials Section ======= -->
-    <section class="testimonials" data-aos="fade-up">
+    <section v-if="false" class="testimonials" data-aos="fade-up">
       <div class="container">
         <div class="section-title">
           <h2>Tetstimonials</h2>

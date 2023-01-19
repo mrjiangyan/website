@@ -142,7 +142,7 @@ export default {
     },
     showTransparent() {
       console.log(this.$route)
-      return this.$route.name.indexOf('home') !== -1
+      return !this.$route.name || this.$route.name.indexOf('home') !== -1
     },
   },
 }

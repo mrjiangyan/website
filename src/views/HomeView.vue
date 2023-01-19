@@ -51,7 +51,7 @@
   <!-- End Hero -->
   <main id="main">
     <!-- ======= Services Section ======= -->
-    <section class="services">
+    <section v-if="false" class="services">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
@@ -102,7 +102,7 @@
     <!-- End Services Section -->
 
     <!-- ======= Why Us Section ======= -->
-    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+    <section v-if="false" class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 video-box">
@@ -140,7 +140,7 @@
     <!-- End Why Us Section -->
 
     <!-- ======= Features Section ======= -->
-    <section class="features">
+    <section v-if="false" class="features">
       <div class="container">
         <div class="section-title">
           <h2>Features</h2>
