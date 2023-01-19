@@ -52,14 +52,7 @@
               <img src="/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="" />
               <div class="portfolio-info">
                 <h3>智能评奖系统</h3>
-                <div>
-                  <a
-                    href="/img/portfolio/portfolio-2.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Web 3"
-                    ><i class="bx bx-plus"></i
-                  ></a>
+                <div v-if="false">
                   <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -70,12 +63,16 @@
             <div class="portfolio-item">
               <img src="/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="" />
               <div class="portfolio-info">
-                <h3>网约车运营管理平台</h3>
-                <div>
+                <h3>
                   <a target="blank" href="https://developer.aliyun.com/article/749925" title="Portfolio Details"
+                    >网约车运营管理平台</a
+                  >
+                </h3>
+                <!-- <div>
+                  
                     ><i class="bx bx-link"></i
                   ></a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
