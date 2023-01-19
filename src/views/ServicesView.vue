@@ -106,7 +106,7 @@
                   consequat
                 </p>
                 <div class="read-more">
-                  <a href="#"><i class="bi bi-arrow-right"></i> Read More</a>
+                  <a href="#"><i class="bi bi-arrow-right"></i> 更多</a>
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@
                   explicabo
                 </p>
                 <div class="read-more">
-                  <a href="#"><i class="bi bi-arrow-right"></i> Read More</a>
+                  <a href="#"><i class="bi bi-arrow-right"></i> 更多</a>
                 </div>
               </div>
             </div>
@@ -141,7 +141,7 @@
                   ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
                 </p>
                 <div class="read-more">
-                  <a href="#"><i class="bi bi-arrow-right"></i> Read More</a>
+                  <a href="#"><i class="bi bi-arrow-right"></i> 更多</a>
                 </div>
               </div>
             </div>
@@ -158,7 +158,7 @@
                   molestiae earum ab sit esse voluptatem. Eos ipsam cumque ipsum officiis qui nihil aut incidunt aut
                 </p>
                 <div class="read-more">
-                  <a href="#"><i class="bi bi-arrow-right"></i> Read More</a>
+                  <a href="#"><i class="bi bi-arrow-right"></i> 更多</a>
                 </div>
               </div>
             </div>

@@ -5,18 +5,16 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Moderna</span></h2>
+          <h2 class="animate__animated animate__fadeInDown">欢迎来到<span>TouchBiz</span></h2>
           <p class="animate__animated animate__fadeInUp">
-            Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
-            Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
-            vel. Minus et tempore modi architecto.
+            我们是一家成立超过10年的软件服务和解决方案提供商，主要面向企业市场提供整体的技术解决方案.
           </p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+          <a v-if="false" href="" class="btn-get-started animate__animated animate__fadeInUp">更多</a>
         </div>
       </div>
 
       <!-- Slide 2 -->
-      <div class="carousel-item">
+      <div v-if="false" class="carousel-item">
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
           <p class="animate__animated animate__fadeInUp">
@@ -24,12 +22,12 @@
             Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
             vel. Minus et tempore modi architecto.
           </p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+          <a href="" class="btn-get-started animate__animated animate__fadeInUp">更多</a>
         </div>
       </div>
 
       <!-- Slide 3 -->
-      <div class="carousel-item">
+      <div v-if="false" class="carousel-item">
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
           <p class="animate__animated animate__fadeInUp">
@@ -37,7 +35,7 @@
             Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
             vel. Minus et tempore modi architecto.
           </p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+          <a href="" class="btn-get-started animate__animated animate__fadeInUp">更多</a>
         </div>
       </div>
 
