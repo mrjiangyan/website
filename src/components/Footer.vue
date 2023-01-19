@@ -23,8 +23,8 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>链接</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">首页</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">关于我们</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/#">首页</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/#/about">关于我们</a></li>
               <li v-if="false"><i class="bx bx-chevron-right"></i> <a href="#">服务</a></li>
               <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
@@ -73,7 +73,8 @@
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>TouchBiz</span></strong
-        >. All Rights Reserved
+        >. All Rights Reserved<br />
+        沪ICP备2022033304号
       </div>
     </div>
   </footer>
