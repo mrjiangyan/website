@@ -9,15 +9,15 @@
               <div class="col-md-12">
                 <div class="info-box">
                   <i class="bx bx-map"></i>
-                  <h3>Our Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <h3>我们的地址</h3>
+                  <p>上海市普陀区祁连山路666号</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com<br />contact@example.com</p>
+                  <h3>邮箱</h3>
+                  <p>touchbiz@outlook.com</p>
                 </div>
               </div>
               <div class="col-md-6">

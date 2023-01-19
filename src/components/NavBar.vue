@@ -25,11 +25,11 @@
           <li>
             <router-link to="/about">关于</router-link>
           </li>
-          <li>
+          <li v-if="false">
             <router-link to="/services">服务</router-link>
           </li>
           <li>
-            <router-link to="/portfolio">作品集</router-link>
+            <router-link to="/portfolio">客户案例</router-link>
           </li>
           <!-- <li><a href="team.html">服务</a></li>
           <li><a href="blog.html">Blog</a></li> -->
@@ -142,8 +142,7 @@ export default {
     },
     showTransparent() {
       console.log(this.$route)
-      console.log(this.$route.path.indexOf('about') !== -1)
-      return this.$route.path.indexOf('about') === -1
+      return this.$route.name.indexOf('home') !== -1
     },
   },
 }

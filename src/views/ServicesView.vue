@@ -52,7 +52,7 @@
     <!-- End Services Section -->
 
     <!-- ======= Why Us Section ======= -->
-    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+    <section v-if="false" class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 video-box">
@@ -90,7 +90,7 @@
     <!-- End Why Us Section -->
 
     <!-- ======= Service Details Section ======= -->
-    <section class="service-details">
+    <section v-if="false" class="service-details">
       <div class="container">
         <div class="row">
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
@@ -169,7 +169,7 @@
     <!-- End Service Details Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <section class="pricing section-bg" data-aos="fade-up">
+    <section v-if="false" class="pricing section-bg" data-aos="fade-up">
       <div class="container">
         <div class="section-title">
           <h2>Pricing</h2>

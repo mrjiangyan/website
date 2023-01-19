@@ -25,7 +25,7 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">首页</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">关于我们</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">服务</a></li>
+              <li v-if="false"><i class="bx bx-chevron-right"></i> <a href="#">服务</a></li>
               <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
             </ul>
