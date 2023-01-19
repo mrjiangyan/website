@@ -82,7 +82,7 @@
             <div class="portfolio-item">
               <img src="/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="" />
               <div class="portfolio-info">
-                <h3>青柠檬智能硬件管理平台</h3>
+                <h3>青柠智能硬件管理平台</h3>
                 <div>
                   <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
