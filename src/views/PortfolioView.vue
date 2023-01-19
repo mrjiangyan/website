@@ -28,7 +28,7 @@
               <img src="/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="" />
               <div class="portfolio-info">
                 <h3>中建八局智慧工地系统</h3>
-                <div>
+                <div v-if="false">
                   <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -37,10 +37,10 @@
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-ai">
             <div class="portfolio-item">
-              <img src="/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="" />
+              <img src="/img/portfolio/portfolio-10.jpg" class="img-fluid" alt="" />
               <div class="portfolio-info">
                 <h3>XX人工智能安全管理系统</h3>
-                <div>
+                <div v-if="false">
                   <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -72,7 +72,9 @@
               <div class="portfolio-info">
                 <h3>网约车运营管理平台</h3>
                 <div>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a target="blank" href="https://developer.aliyun.com/article/749925" title="Portfolio Details"
+                    ><i class="bx bx-link"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -83,7 +85,7 @@
               <img src="/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="" />
               <div class="portfolio-info">
                 <h3>青柠智能硬件管理平台</h3>
-                <div>
+                <div v-if="false">
                   <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -95,7 +97,7 @@
               <img src="/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="" />
               <div class="portfolio-info">
                 <h3>XX500强酒店集团App预订系统</h3>
-                <div>
+                <div v-if="false">
                   <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
