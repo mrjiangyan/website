@@ -9,8 +9,8 @@
               <div class="col-md-12">
                 <div class="info-box">
                   <i class="bx bx-map"></i>
-                  <h3>我们的地址</h3>
-                  <p>上海市普陀区祁连山路666号</p>
+                  <h3>地址</h3>
+                  <p>上海市普陀区祁连山路1035弄188号4幢201室</p>
                 </div>
               </div>
               <div class="col-md-6">
